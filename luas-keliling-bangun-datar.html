@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Luas Bangun Datar</title>
+        <link rel="stylesheet" href="../Mini-project/CSS/index.css">
+    </head>
+    <!-- body start -->
+    <body>
+        <script src="../Mini-project/javascript/index.js"></script>
+        <h1 class="title"> Welcome to Katik </h1>
+        
+        <p class="paragraf">Hai sobat! Selamat datang di katik.
+        Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    
+        <!-- body end -->
+    
+    <!-- navbar start -->
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="#triangle" class="menu-triangle">Segitiga</a>
+                <a href="#parallelogram" class="menu-jajargenjang">Jajargenjang</a>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- main start -->
+    <main>
+    <section id="triangle"></section>
+       <div class="card">
+        <div>
+            <h2> Luas segitiga</h2>
+        </div>
+            <img src="../Mini-project/assets/segitiga.png" alt="triangle" width="200px" height="200px">
+            <hr/>
+        <h4>Rumus Luas Segitiga yaitu :</h4>
+        <p>L = 1/2 x a x t</p>
+    <div>
+        <p>Dimana :</p>
+        <p>L = Luas</p>
+        <p>a = Alas</p>
+        <p>t = Tingi</p>
+    </div>
+    <div class="form-hitung">
+        <h4> Hitung Luas Segitiga</h4>
+        <form action="" id="myformluassegitiga" class="formluassegitiga">
+            <input type="number" id="alas" placeholder="Nilai Alas" required />
+            <input type="number" id="tinggi" placeholder="Nilai Tinggi" required />
+            <button type="submit" onclick="return luassegitiga()">Hitung</button>
+            <div id="show-resultluassegitiga"></div>
+
+            <input type="reset" value="reset" onclick="clearluassegitiga()">
+        </form>
+        </div>
+       </div>
+    </section>
+    <section id="triangle"></section>
+    <div class="card">
+     <div>
+         <h2> Keliling segitiga</h2>
+     </div>
+         <img src="../Mini-project/assets/segitiga.png" alt="triangle" width="200px" height="200px">
+         <hr/>
+     <h4>Rumus Keliling Segitiga yaitu :</h4>
+     <p>K = s1 + s2 + s3</p>
+ <div>
+     <p>Dimana :</p>
+     <p>K = Keliling</p>
+     <p>s1 = sisi A</p>
+     <p>s2 = sisi B</p>
+     <p>s3 = sisi C</p>
+ </div>
+ <div class="form-hitung">
+     <h4> Hitung Keliling Segitiga</h4>
+     <form action="" id="myformkelilingsegitiga" class="formkelilingsegitiga">
+         <input type="number" id="s1" placeholder="Nilai sisi A" required />
+         <input type="number" id="s2" placeholder="Nilai sisi B" required />
+         <input type="number" id="s3" placeholder="Nilai sisi C" required />
+         <button type="submit" onclick="return kelilingsegitiga()">Hitung</button>
+         <div id="show-resultkelsegitiga"></div>
+
+         <input type="reset" value="reset" onclick="clearkelsegitiga()">
+     </form>
+     </div>
+    </div>
+ </section>
+ <section id="parallelogram"></section>
+ <div class="card">
+  <div>
+      <h2> Luas Jajargenjang</h2>
+  </div>
+      <img src="../Mini-project/assets/jajargenjang.png" alt="parallelogram" width="200px" height="200px">
+      <hr/>
+  <h4>Rumus Luas Jajargenjang yaitu :</h4>
+  <p>L = a x t</p>
+<div>
+  <p>Dimana :</p>
+  <p>L = Luas</p>
+  <p>a = Alas</p>
+  <p>t = Tinggi</p>
+
+</div>
+<div class="form-hitung">
+  <h4> Hitung Luas Jajargenjang</h4>
+  <form action="" id="myformluasjajargenjang" class="formluasjajargenjang">
+      <input type="number" id="alasjajargenjang" placeholder="Nilai alas" required />
+      <input type="number" id="tinggijajargenjang" placeholder="Nilai tinggi" required />
+      <button type="submit" onclick="return luasjajargenjang()">Hitung</button>
+      <div id="show-resultluasjajargenjang"></div>
+
+      <input type="reset" value="reset" onclick="clearluasjajargenjang()">
+  </form>
+  </div>
+ </div>
+</section>
+<section id="parallelogram"></section>
+ <div class="card">
+  <div>
+      <h2> Keliling Jajargenjang</h2>
+  </div>
+      <img src="../Mini-project/assets/jajargenjang.png" alt="parallelogram" width="200px" height="200px">
+      <hr/>
+  <h4>Rumus Keliling Jajargenjang yaitu :</h4>
+  <p>K = 2 x ( a + t )</p>
+<div>
+  <p>Dimana :</p>
+  <p>K = Keliling</p>
+  <p>a = Alas</p>
+  <p>t = Tinggi</p>
+
+</div>
+<div class="form-hitung">
+  <h4> Hitung Keliling Jajargenjang</h4>
+  <form action="" id="myformkeljajargenjang" class="formluaskeljajargenjang">
+      <input type="number" id="pedestaljajargenjang" placeholder="Nilai alas" required />
+      <input type="number" id="sisimiringjajargenjang" placeholder="Nilai sisi miring" required />
+      <button type="submit" onclick="return keljajargenjang()">Hitung</button>
+      <div id="show-resultkeljajargenjang"></div>
+
+      <input type="reset" value="reset" onclick="clearkeljajargenjang()">
+  </form>
+  </div>
+ </div>
+</section>
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>Copyright 2023 Bagus Prasetyo</footer>
+    <!-- footer end -->
+    </body>
+</html>
